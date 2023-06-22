@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/677cd6c624.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+                <i class="fas fa-bars" id="menu" onclick="openmenu()"></i>    
+        </nav>
+        <div class="header-text">
+            <p>Fresher</p>
+            <h1>Hi, I'm <span> Vedha Jothika</span></h1>
+        </div>
+    </div>
+  </div>
+ <!------about------->
+
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-call-1">
+                <img src="img/download1.jpg">
+            </div>
+            <div class="about-call-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> As I am the fresher in this ﬁeld, I will know about the nature of my work. Moreover, I will attempt to know about the various processes which form my job. By doing so, I will be able to do my job more proﬁciently. On the other hand, I shall implement my knowledge into the practical world.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End</span><br> HTML,CSS,JavaScript</li>
+                        <li><span>Back-End</span><br>C,C++,Python</li>
+                        <li><span>Database</span><br>MYSQL</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Fresher</span><br>Looking for Job</li>
+                        </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>MCA from Anna University</li>
+                        <li><span>2021</span><br>B.SC Mathematics from Mother Teresa Women's University</li>
+                        <li><span>2018</span><br>HSC from S.D.A School </li>
+                        <li><span>2016</span><br>SSLC from S.D.A School</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!----------------------services----------------------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quo, sed officia quas libero architecto est, mollitia deserunt praesentium in perferendis necessitatibus quasi sapiente nam vel. Ad nulla id molestias? </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quo, sed officia quas libero architecto est, mollitia deserunt praesentium in perferendis necessitatibus quasi sapiente nam vel. Ad nulla id molestias? </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code-branch"></i>
+                <h2>Back-End</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quo, sed officia quas libero architecto est, mollitia deserunt praesentium in perferendis necessitatibus quasi sapiente nam vel. Ad nulla id molestias? </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+    <!--------------------portfolio----------------------------->
+    <div id="portfolio">
+         <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work1.jpg">
+                    <div class="layer">
+                        <h3>Bakery Website</h3>
+                        <p>This was the first website i have created.It contains details about bakery items.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work2.jpg">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>This was my second website i have created.It contains details about me.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work3.jpg">
+                    <div class="layer">
+                        <h3>Phishing Detection</h3>
+                        <p>This project is done to detect the phishing website.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+         </div>
+    </div>
+   <!----------------------Contact----------------------->
+       <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>vedhajothika78@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9843843895</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/vedha18"><i class="fa-brands fa-github"></i></a>
+                        
+                    </div>
+                    
+                    <a href="img/VEDHA_JOTHIKA.pdf" download class="btn btn2" id="cv">Download CV</a>
+                
+                </div>
+            </div>
+        </div>
+       </div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+</body>
+</html> 
